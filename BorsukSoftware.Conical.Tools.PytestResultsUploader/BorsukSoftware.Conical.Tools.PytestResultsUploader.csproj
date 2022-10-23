@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>BorsukSoftware</Authors>
+		<Copyright>Borsuk Software</Copyright>
+		<PackageTags>borsuksoftware;conical;pytest</PackageTags>
+		<PackAsTool>True</PackAsTool>
+		<PackageIcon>conical.png</PackageIcon>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\conical.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BorsukSoftware.Utils.Pytest" Version="1.0.0.5" />
+		<PackageReference Include="BorsukSoftware.Conical.Client" Version="1.0.0.67" />
+	</ItemGroup>
+
+</Project>
